@@ -26,7 +26,7 @@ const IP1 = () => {
 
   function setupHDRI() {
     const rgbeloader = new RGBELoader();
-    rgbeloader.load('hdri/gem_2.hdr', (hdri) => {
+    rgbeloader.load('hdri/neutral.hdr', (hdri) => {
       const myhdr = hdri;
       myhdr.mapping = THREE.EquirectangularReflectionMapping;
       scene.environment = myhdr;
